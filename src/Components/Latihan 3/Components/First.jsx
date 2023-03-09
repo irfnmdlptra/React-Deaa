@@ -3,7 +3,6 @@ import { useNavigate } from "react-router";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import './Styles/Reload.css';
-
 const First = () => {
   const navigate = useNavigate();
   return (
@@ -23,20 +22,15 @@ const First = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                 consequat.
               </p>
-              <div className="d-flex">
                 <a href="#" className="btn btn-primary mx-3" onClick={() => navigate("/about")}>
                   Tentang Kami
                 </a>
-                <a href="#" className="btn btn-danger " onClick={() => navigate("*")}>
-                  Jangan Diklik!
-                </a>
-              </div>
             </div>
           </div>
         </div>
       </div>
-      <div class="background-emergency">
-        <button class="emergency">EMERGENCY</button>
+      <div class="background-button">
+        <button class="button" onClick={() => navigate("*")}>Don't Click!</button>
       </div>
     </div>
   );

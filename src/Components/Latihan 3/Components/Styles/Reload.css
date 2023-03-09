@@ -350,7 +350,7 @@
 
 
 
-  .background-emergency {
+  .background-button {
     background: repeating-linear-gradient(
       45deg,
       #3c2209 0 20px,
@@ -363,9 +363,10 @@
     position: relative;
     display: inline-block;
     outline: 2px solid black;
+    transform: translate(12rem, 10px);
   }
   
-  .background-emergency::before {
+  .background-button::before {
     content: "";
     display: inline-block;
     position: absolute;
@@ -377,7 +378,7 @@
     border: 2px solid #3c2209;
   }
   
-  .emergency {
+  .button {
     background: #cc2a1f;
     width: 65%;
     height: 65%;
@@ -396,13 +397,13 @@
     border: 2px solid black;
   }
   
-  .emergency:active {
+  .button:active {
     -webkit-box-shadow: 0 1px 1px 1px #8C0606;
     box-shadow: 0 1px 1px 1px #8C0606;
     top: 15%;
   }
   
-  .background-emergency:has(.emergency:active) + .emergency {
+  .background-button:has(.button:active) + .emergency {
     display: block;
     -webkit-transform: rotate(0deg) scaleY(1);
     -ms-transform: rotate(0deg) scaleY(1);
