@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const Hooks = () => {
-    const [pacarSaya, setPacarSaya] = useState(1)
+    const [pacarSaya, setPacarSaya] = useState(0)
     const [namaPacar, setNamaPacar] = useState("")
 
     const kurangiPacar = () => {

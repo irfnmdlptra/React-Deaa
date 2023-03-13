@@ -7,6 +7,7 @@ import './index.css';
 // import State from './Components/Latihan 2/State';
 // import Routing from './Components/Latihan 3/Routing';
 import Hooks from './Components/Latihan 4/Hooks';
+// import Examp from './Components/Latihan 5/UseRef';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
